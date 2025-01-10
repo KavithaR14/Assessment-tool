@@ -1,0 +1,58 @@
+.bargraph-container {
+  width:1000px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 250px;
+  font-size: 28px;
+}
+
+.score-container, .description-container {
+  margin: 50px 0;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.score-container h3 {
+  font-size: 35px;
+  color: #007bff;
+  margin-left: 410px;
+  margin-bottom: 70px;
+  
+}
+.description-container h3 {
+  font-size: 35px;
+  color: #007bff;
+  margin-left: 410px;
+  margin-bottom: 70px;
+}
+
+.score-box p  {
+  padding: 0px;
+  font-size: 28px;
+  color: #1a1818;
+  margin-left: 200px;
+  line-height: 1.5;
+}
+.description-box p {
+  padding:10px;
+  font-size: 28px;
+  color: #1a1818;
+  margin-bottom: 30px;
+  /* margin-left: 200px; */
+}
+.download-btn {
+  padding: 10px 30px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.download-btn:hover {
+  background: hsl(115, 64%, 44%);
+}

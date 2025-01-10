@@ -1,0 +1,112 @@
+/* Report.css */
+.bargraph-container {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .user-name {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  .bargraph-container .score-container {
+    margin-top: 30px;
+  }
+  
+  h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .score-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .score-box p {
+    margin: 5px 0;
+    font-size: 1.1em;
+  }
+  
+  .score-box em {
+    font-style: italic;
+  }
+  
+  .description-container,
+  .improvement-tips {
+    margin-top: 20px;
+  }
+  
+  .description-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .improvement-tips ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .improvement-tips li {
+    background: url('https://img.icons8.com/ios-filled/50/000000/checkmark.png') no-repeat left center;
+    padding-left: 30px;
+    font-size: 1.1em;
+    margin: 5px 0;
+  }
+  
+  .download-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #45a049;
+  }
+  
+  footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  footer p {
+    margin: 10px 0;
+  }
+  

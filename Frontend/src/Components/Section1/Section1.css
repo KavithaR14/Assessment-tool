@@ -1,0 +1,203 @@
+.screen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  url("../Assets/section1.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  overflow-y: scroll;
+}
+
+.assessment-containers {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: rgba(243, 243, 243, 0.767); /* Slightly transparent white */
+  border-radius: 0px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.assessment-containers h1 {
+  text-align: center;
+  color: #000000;
+  font-size: 2.9em;
+  margin-bottom: 30px;
+}
+
+.assessment-containers h1::after {
+  content: "📚 A satisfied mind creates a productive workplace!";
+  display: block;
+  font-size: 0.7em;
+  color: #000000;
+  margin-top: 5px;
+}
+
+.question {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000000;
+  margin-left: 70px;
+  margin-top: 39px;
+  margin-bottom: 30px;
+}
+
+.options label {
+  display: block;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin-left: 70px;
+}
+
+
+
+.options input[type="radio"] {
+  margin-right: 20px;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+/* .nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+} */
+
+.nav {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Center the button vertically */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 0px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 50px;
+  width: 100px;
+  margin-left: 800px;
+}
+
+.nav button:hover {
+  background-color: #388e3c;
+}
+
+.progress-bar {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #e0e0e0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #4caf50;
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+.teacher-quote {
+  text-align: center;
+  font-size: 1em;
+  color: #777;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+/* Responsive Design */
+
+/* For tablets */
+@media (max-width: 480px) {
+  .assessment-container {
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto; /* Keep it centered and aligned */
+    background: rgba(243, 243, 243, 0.9); /* Slightly more opaque for readability */
+    position: relative; /* Ensure it doesn't move independently */
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .question {
+    font-size: 1.2em;
+    margin: 10px auto; /* Center the question horizontally */
+    text-align: center;
+  }
+
+  .options label {
+    font-size: 1em;
+    margin: 10px auto; /* Center the labels */
+    padding: 10px; /* Increased padding for touch interaction */
+    display: block;
+    text-align: left; /* Align text within labels */
+  }
+
+  .options input[type="radio"] {
+    transform: scale(1.2); /* Scaled for better layout */
+    margin-right: 10px;
+    vertical-align: middle; /* Align with label text */
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .nav button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 500px;
+    height: 30px;
+    width: 40px;
+  }
+  
+  .nav button:hover {
+    background-color: #388e3c;
+  }
+  .teacher-quote {
+    font-size: 0.9em;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .progress-bar {
+    height: 4px; /* Thinner for better mobile proportion */
+    width: 100%;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    background: #4caf50;
+    transition: width 0.5s ease;
+  }
+}
+

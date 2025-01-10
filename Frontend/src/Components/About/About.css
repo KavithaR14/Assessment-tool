@@ -1,0 +1,84 @@
+/* body {
+  overflow-y: scroll; /* Ensures vertical scrolling */
+  /* height: 100%;       Ensures body takes full viewport height */
+/* }  */
+.about-container {
+    display: flex;
+    flex-direction: row; /* Align text and images horizontally */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    flex-wrap: wrap;
+  }
+  
+  .image-grid {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    width: 45%; /* Adjust image container width */
+  }
+  
+  .grid-image {
+    width: 100%;  /* Ensure images take the full width of the container */
+    height: auto;
+    margin: 10px 0; /* Space between images */
+    border-radius: 8px;
+  }
+  
+  .about-text {
+    width: 50%; /* Text takes up the other half */
+    padding-left: 20px; /* Space between images and text */
+  }
+  
+  .about-text h2 {
+    font-size: 40px; /* Increased font size for the heading */
+    color: #035772; /* Color for the heading */
+    margin-bottom: 40px;
+  }
+  
+  .about-text p {
+    font-size: 18px; /* Increased font size for the paragraph */
+    line-height: 2.0;
+    color: #555;
+    margin-left: -100px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column; /* Stack text and images vertically */
+      align-items: center;
+    }
+  
+    .about-text {
+      width: 90%; /* Make text container take full width on mobile */
+      text-align: center; /* Center align text on mobile */
+    }
+  
+    .image-grid {
+      width: 90%; /* Make image container take full width on mobile */
+    }
+  
+    .grid-image {
+      width: 100%;  /* Full-width images */
+    }
+  
+    .about-text h2 {
+      font-size: 24px; /* Adjust heading size for smaller screens */
+    }
+  
+    .about-text p {
+      font-size: 16px; /* Adjust paragraph font size */
+    }
+  }
+  
+  /* Tablet responsiveness */
+  @media (max-width: 480px) {
+    .about-text h2 {
+      font-size: 30px; /* Further reduce heading size */
+    }
+  
+    .about-text p {
+      font-size: 18px; /* Further reduce paragraph font size */
+    }
+  }

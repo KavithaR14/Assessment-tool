@@ -1,0 +1,207 @@
+.screen4{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  url("../Assets/section4.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  overflow-y: scroll;
+}
+.assessment1-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+  border-radius: 0px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  backdrop-filter: blur(3px); /* Adds a subtle blur effect */
+}
+  .assessment1-container h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 3.1em;
+    margin-bottom: 10px;
+  }
+  
+  .assessment1-container h1::after {
+    content: "📚 Empowering Education Together!";
+    display: block;
+    font-size: 0.7em;
+    color: #000000;
+    margin-top: 5px;
+  }
+  
+  
+  .question {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 70px;
+  }
+  
+  .options label {
+    display: block;
+  
+    padding: 8px;
+   
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin-left: 70px;
+  }
+  
+  /*  */
+  
+  
+  .options input[type="radio"] {
+    margin-right: 20px;
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .nav button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 50px;
+    width: 100px;
+    margin-left: 800px;
+  }
+  
+  .nav button:hover {
+    background-color: #388e3c;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #e0e0e0;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background: #4caf50;
+    width: 0;
+    transition: width 0.5s ease;
+  }
+  
+  .teacher-quote {
+    text-align: center;
+    font-size: 1em;
+    color: #777;
+    font-style: italic;
+    margin-top: 15px;
+  }
+  
+  /* Responsive Design */
+  
+  /* For tablets */
+  @media (max-width: 768px) {
+    .assessment-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    .question {
+      font-size: 1.3em;
+    }
+  
+    .options label {
+      font-size: 1em;
+    }
+    .nav {
+      display: flex;
+      justify-content: center; /* Center the button horizontally */
+      align-items: center; /* Center the button vertically */
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .nav button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 0px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      height: 50px;
+      width: 100px;
+      margin-left: 800px;
+    }
+    
+    .nav button:hover {
+      background-color: #388e3c;
+    }
+  }
+  
+  /* For mobile devices */
+@media (max-width: 480px) {
+  .assessment1-container {
+    width: 95%; /* Full width on smaller screens */
+    padding: 15px;
+  }
+
+  .question {
+    font-size: 1em; /* Adjust font size for better fit */
+    margin-left: 10px; /* Reduce margin */
+  }
+
+  .options label {
+    font-size: 0.9em;
+    margin-left: 10px; /* Reduce left margin */
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .nav button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 50px;
+    width: 100px;
+    margin-left: 800px;
+  }
+  
+  .nav button:hover {
+    background-color: #388e3c;
+  }
+}

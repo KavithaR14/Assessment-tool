@@ -1,0 +1,215 @@
+.screen1{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  url("../Assets/section3.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  overflow-y: scroll;
+}
+.assessments-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+  border-radius: 0px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+}
+  
+  .assessments-container h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 2.9em;
+    margin-bottom: 20px;
+  }
+  
+  .assessments-container h1::after {
+    content: "📚 Effective stress management leads to balanced productivity!";
+    display: block;
+    font-size: 0.7em;
+    color: #000000;
+    margin-top: 5px;
+  }
+  
+  
+  .question {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 70px;
+    margin-bottom: 30px;
+  }
+  
+  .options label {
+    display: block;
+  
+    padding: 8px;
+   
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin-left: 70px;
+  }
+  
+  /*  */
+  
+  
+  .options input[type="radio"] {
+    margin-right: 20px;
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+  
+  .navigation2-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .previous-button,
+  .next-button2,
+  .submit-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px ;
+    border: none;
+    border-radius: 0px;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 1100px;
+    height: 70px;
+    width: 120px;
+  }
+  
+  .previous-button:hover,
+  .next-button:hover,
+  .submit-button:hover {
+    background-color: #388e3c;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #e0e0e0;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background: #4caf50;
+    width: 0;
+    transition: width 0.5s ease;
+  }
+  
+  .teacher-quote {
+    text-align: center;
+    font-size: 1em;
+    color: #777;
+    font-style: italic;
+    margin-top: 15px;
+  }
+  
+  /* Responsive Design */
+  
+  /* Mobile Responsive Design */
+@media (max-width: 480px) {
+  .screen1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../Assets/section3.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    overflow-y: scroll;
+  }
+
+  .assessments-container {
+    width: 95%; /* Almost full width */
+    padding: 15px;
+    margin: 20px auto; /* Centered and aligned */
+    background: rgba(255, 255, 255, 0.8); /* Slightly more opaque for better readability */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .assessments-container h1 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .assessments-container h1::after {
+    font-size: 0.6em;
+    margin-top: 5px;
+  }
+
+  .question {
+    font-size: 1.2em;
+    text-align: left; /* Align left for easier reading */
+    margin: 10px 0;
+  }
+
+  .options label {
+    font-size: 1em;
+    margin: 8px 0;
+    padding: 8px;
+    display: block;
+    text-align: left;
+  }
+
+  .options input[type="radio"] {
+    transform: scale(1.3); /* Slightly larger for easier touch selection */
+    margin-right: 12px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .nav button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 50px;
+    width: 100px;
+    margin-left: 800px;
+  }
+  
+  .nav button:hover {
+    background-color: #388e3c;
+  }
+
+  .progress-bar {
+    height: 4px;
+    margin-top: 10px;
+  }
+
+  .teacher-quote {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
